@@ -2,28 +2,18 @@
 docker build -t lab2 .
 
 # Run Docker container
-docker run -d -p 8080:80 --name tr1 lab2
+docker run -d --name container_name -p 8080:80 --name lab2
 
-# Check running containers
-docker ps
 
 # Get image ID
-docker images
 
 # Tag image for Docker Hub
-docker tag lab2 username/imagename:latest
+docker tag img_id username/imagename
 
-# Login to Docker Hub
-docker login
 
 # Push image to Docker Hub
-docker push username/imagename:latest
+docker push username/imagename
 
 # Pull image from Docker Hub
 docker pull username/imagename:latest
 
-# Stop container
-docker stop tr1
-
-# Remove container
-docker rm tr1
