@@ -1,19 +1,6 @@
-# Build Docker image
 docker build -t lab2 .
-
-# Run Docker container
 docker run -d --name container_name -p 8080:80 --name lab2
-
-
-# Get image ID
-
-# Tag image for Docker Hub
 docker tag img_id username/imagename
-
-
-# Push image to Docker Hub
 docker push username/imagename
-
-# Pull image from Docker Hub
 docker pull username/imagename:latest
 
