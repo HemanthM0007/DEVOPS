@@ -1,5 +1,5 @@
 docker build -t lab2 .
-docker run -d --name container_name -p 8080:80 --name lab2
+docker run -d --name container_name -p 8080:80 lab2
 docker tag img_id username/imagename
 docker push username/imagename
 docker pull username/imagename:latest
