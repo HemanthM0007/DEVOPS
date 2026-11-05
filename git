@@ -1,0 +1,24 @@
+git init
+git config --global username hemanth
+git config --global user.name "hemanth"
+git config --global user.email "hemanth@gmail.com"
+git log
+git status
+git add .
+git commit -m "ini"
+git branch A
+git switch A
+git add .
+git commit -m "A"
+git switch master
+git branch B
+git switch B
+git add .
+git commit -m "B"
+git switch master
+git merge A
+git merge B
+git add .
+git commit -m "done"
+git status
+git log
