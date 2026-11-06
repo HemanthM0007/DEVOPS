@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: kuber11
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: kuber11
+
+  template:
+    metadata:
+      labels:
+        app: kuber11
+
+    spec:
+      containers:
+        - name: kuber11
+          image: kuber11
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
